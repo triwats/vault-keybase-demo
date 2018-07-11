@@ -99,8 +99,10 @@ $ echo "wcFMA7u2sxd6JS/xARAAFvoR7WoTaemSCcHpTHxELgNQHdtlkL8fvzrIXzhclRrLpqc5kZGP
 9ac634d114c03f47c018b1ac9e50e7b666a6f0f118jifjwi44fi
 
 ## Unseal the Vault
+``` bash
 $ vault operator unseal
 Unseal Key (will be hidden):
+```
 
 
 
