@@ -52,7 +52,7 @@ This is using the filesystem as the secret storage and binding Vault to a specif
 Next you'll want to start Vault with that configuration set:
 
 ```
-$ vault server -config config.hclvault server -config config.hcl &
+$ vault server -config config.hcl &
 ```
 
 This will bring up an uninitiated Vault as a background process, which is exactly what we want
@@ -67,7 +67,7 @@ $ export VAULT_ADDR='http://127.0.0.1:8200'
 
 ## Initialize the Vault with a list of keybase users:
 ``` bash
-$ vault server init  -key-shares=1 -key-threshold=1 -pgp-keys="keybase:<user>" -tls-skip-verify
+$ vault operator init  -key-shares=1 -key-threshold=1 -pgp-keys="keybase:<user>" -tls-skip-verify
 # To specify more than one up the 'key-shares' and include another user they are comma separated values so it would look like the following:
 # vault server init  -key-shares=2 -key-threshold=1 -pgp-keys="keybase:<user1>,keybase<user2>" -tls-skip-verify
 ```
